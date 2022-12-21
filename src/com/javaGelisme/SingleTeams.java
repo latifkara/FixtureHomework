@@ -1,19 +1,20 @@
 package com.javaGelisme;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Random;
 
-public class Team {
+public class SingleTeams {
     private List<String> teams = new ArrayList<String>();
-    public Team(){
+    public SingleTeams(){
+        teams.add("Bay");
         teams.add("Galatasaray");
         teams.add("Bursaspor");
         teams.add("Fenerbahce");
         teams.add("Besiktas");
         teams.add("Basaksehir");
         teams.add("Trabzonspor");
+        teams.add("Boluspor");
     }
 
     public void option(){
@@ -40,6 +41,6 @@ public class Team {
                 newList.add(secondTeam);
                 count++;
             }
-        }while (count < 3);
+        }while (count < 4);
     }
 }
